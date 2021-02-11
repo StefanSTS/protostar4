@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="template" client="site" method="upgrade">
+	<name>protostar4</name>
+	<version>4.0.0</version>
+	<creationDate>2021-01-09</creationDate>
+	<author>Kyle Ledbetter, Stefan Schumacher</author>
+	<authorEmail>admin@joomla.org, protostar@jooglies.com</authorEmail>
+	<copyright>Copyright (C) 2005 - 2020 Open Source Matters, Inc. 2021 Stefan Schumacher. All rights reserved.</copyright>
+	<description>TPL_PROTOSTAR4_XML_DESCRIPTION</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>offline.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>joomla.asset.json</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+	</files>
+	<positions>
+		<position>banner</position>
+		<position>debug</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>footer</position>
+		<position>menu</position>
+		<position>search</position>
+		<position>banner</position>
+		<position>top-a</position>
+		<position>top-b</position>
+		<position>main-top</position>
+		<position>main-bottom</position>
+		<position>breadcrumbs</position>
+		<position>sidebar-left</position>
+		<position>sidebar-right</position>
+		<position>bottom-a</position>
+		<position>bottom-b</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_protostar4.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_protostar4.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field
+					name="templateColor"
+					type="color"
+					label="TPL_PROTOSTAR4_COLOR_LABEL"
+					description="TPL_PROTOSTAR4_COLOR_DESC"
+					class=""
+					default="#08C"
+				/>
+
+				<field
+					name="templateBackgroundColor"
+					type="color"
+					label="TPL_PROTOSTAR4_BACKGROUND_COLOR_LABEL"
+					description="TPL_PROTOSTAR4_BACKGROUND_COLOR_DESC"
+					class=""
+					default="#F4F6F7"
+				/>
+
+				<field
+					name="logoFile"
+					type="media"
+					label="TPL_PROTOSTAR4_LOGO_LABEL"
+					description="TPL_PROTOSTAR4_LOGO_DESC"
+					class=""
+					default=""
+				/>
+
+				<field
+					name="sitetitle"
+					type="text"
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					default=""
+					filter="string"
+				/>
+
+				<field
+					name="sitedescription"
+					type="text"
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					default=""
+					filter="string"
+				/>
+
+				<field
+					name="googleFont"
+					type="radio"
+					label="TPL_PROTOSTAR4_FONT_LABEL"
+					description="TPL_PROTOSTAR4_FONT_DESC"
+					layout="joomla.form.field.radio.switcher"
+					default="1"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field
+					name="googleFontName"
+					type="text"
+					label="TPL_PROTOSTAR4_FONT_NAME_LABEL"
+					description="TPL_PROTOSTAR4_FONT_NAME_DESC"
+					class=""
+					default="Open+Sans"
+					showon="googleFont:1"
+				/>
+
+				<field
+					name="fluidContainer"
+					type="radio"
+					label="TPL_PROTOSTAR4_FLUID_LABEL"
+					description="TPL_PROTOSTAR4_FLUID_DESC"
+					layout="joomla.form.field.radio.switcher"
+					default="0"
+					>
+					<option value="1">TPL_PROTOSTAR4_FLUID</option>
+					<option value="0">TPL_PROTOSTAR4_STATIC</option>
+				</field>
+
+				<field
+					name="backTop"
+					type="radio"
+					label="TPL_PROTOSTAR4_BACKTOTOP_LABEL"
+					layout="joomla.form.field.radio.switcher"
+					default="0"
+					filter="integer"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
