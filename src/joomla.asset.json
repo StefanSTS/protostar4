@@ -43,7 +43,8 @@
       "type": "script",
       "uri": "template.js",
       "dependencies": [
-        "core"
+        "core",
+        "jquery"
       ]
     },
     {
